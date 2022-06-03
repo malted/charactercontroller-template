@@ -1,0 +1,31 @@
+{
+  "name": "charactercontroller-template",
+  "version": "1.0.0",
+  "description": "A template to demonstrate useage of the charactercontroller package",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ma1ted/charactercontroller-template.git"
+  },
+  "keywords": [
+    "charactercontroller",
+    "controller",
+    "demo",
+    "template"
+  ],
+  "author": "malted",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ma1ted/charactercontroller-template/issues"
+  },
+  "homepage": "https://github.com/ma1ted/charactercontroller-template#readme",
+  "dependencies": {
+    "charactercontroller": "^1.2.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}
