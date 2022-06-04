@@ -1,10 +1,10 @@
 {
   "name": "charactercontroller-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A template to demonstrate useage of the charactercontroller package",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/ma1ted/charactercontroller-template#readme",
   "dependencies": {
-    "charactercontroller": "^1.2.1"
+    "charactercontroller": "^1.2.1",
+    "three": "^0.141.0"
   },
   "devDependencies": {
     "parcel": "^2.6.0"
