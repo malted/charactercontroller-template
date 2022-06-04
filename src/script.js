@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { arrangeScene, animateScene } from "./scene.js";
+import SceneManager from "./scenemanager.js";
 import CharacterController from "charactercontroller";
 
 const fpsDisplay = document.getElementById("fps");
@@ -8,7 +8,7 @@ let deltaTime;
 
 const scene = new THREE.Scene();
 
-arrangeScene(scene);
+const sceneManager = new SceneManager(scene);
 
 let controller = new CharacterController(scene, {});
 
@@ -29,14 +29,6 @@ document.addEventListener("click", () => {
     canvas.requestPointerLock()
 })
 
-
-document.addEventListener("keydown", (e) => {
-    console.log(e)
-});
-document.addEventListener("keyup", (e) => {
-    console.log(e)
-});
-
 function updateFps(delta) {
     fpsDisplay.innerHTML = `${parseInt(1 / delta)} FPS`;
     setTimeout(() => updateFps(deltaTime), 100);
@@ -50,7 +42,7 @@ function animate() {
     elapsedTime = t.elapsed;
     deltaTime = t.delta
 
-    animateScene(elapsedTime);
+    sceneManager.animateScene(elapsedTime);
     
     renderer.render(scene, controller.player.children[0]);
 };
