@@ -1,11 +1,15 @@
 import * as THREE from "three";
 
+let boxMesh;
+let sphereMesh;
+let torusKnotMesh;
+
 export function arrangeScene(scene) {
     const floorMaterial = new THREE.MeshBasicMaterial({ color: 0xF8C8DC });
     const normalMaterial = new THREE.MeshNormalMaterial();
     
-    const floorGeometry = new THREE.PlaneGeometry(15, 15),
-    floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
+    const floorGeometry = new THREE.PlaneGeometry(15, 15);
+    const floorMesh = new THREE.Mesh(floorGeometry, floorMaterial);
     scene.add(floorMesh);
     
     const boxGeometry = new THREE.BoxGeometry(0.8, 0.8, 0.8);
@@ -14,7 +18,7 @@ export function arrangeScene(scene) {
     boxMesh.position.set(-3, 3, 1)
     
     const torusGeometry = new THREE.TorusGeometry(0.75, 0.15, 16, 100);
-    torusMesh = new THREE.Mesh(torusGeometry, normalMaterial);
+    const torusMesh = new THREE.Mesh(torusGeometry, normalMaterial);
     scene.add(torusMesh);
     torusMesh.position.set(3, -3, 0.5);
 
