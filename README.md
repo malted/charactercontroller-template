@@ -1,4 +1,4 @@
-![Replit Badge](https://replit.com/badge/github/malted/charactercontroller-template)
+[![Replit Badge](https://replit.com/badge/github/malted/charactercontroller-template)](https://replit.com/@malted/charactercontroller-template)
 
 The aim of this guide is to walk you through creating a minimal scene using the `CharacterController` package.
 
