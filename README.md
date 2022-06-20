@@ -1,3 +1,5 @@
+![Replit Badge](https://replit.com/badge/github/malted/charactercontroller-template)
+
 The aim of this guide is to walk you through creating a minimal scene using the `CharacterController` package.
 
 First of all, we need to set up our devlopment environment. I'm going to use the Parcel bundler for this guide, as it's based as fuck and requires zero configuration.
