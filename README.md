@@ -135,7 +135,7 @@ controller.player.position.z = 1;
 scene.add(controller.player);
 ```
 
-> You want to know what's actually happening? You've come to the right guy.
+> You want to know what's actually happening?
 > When the character controller is initialised, a Three.js `Group` is created, which the camera is then added to. Neither the `Group` or the camera have any inherent volume or height to them, but the player's apparent height is actually created by an invisible ray being sent out pointing down from the `Group`'s location. That ray is `floorDistance` long (an option you can pass into the character controller options object), and if the ray intersects with an object in the scene, the character stops falling. You can change the character's "height" by adjusting this value, because the character will stop being pulled down and "stand" closer/further away from the ground. Neat stuff, I know.
 > When the character spawns inside the floor plane, you can't see it because the camera is perfectly aligned with the infinitely thin floor. The camera doesn't see any geometry, so doesn't render pixels to the screen. The player doesn't fall down as the ray is still technically intersecting with the floor, even if it is only 0 units away.
 
