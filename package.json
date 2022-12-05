@@ -1,6 +1,6 @@
 {
   "name": "charactercontroller-template",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "A template to demonstrate useage of the charactercontroller package",
   "scripts": {
     "start": "parcel index.html",
@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/ma1ted/charactercontroller-template#readme",
   "dependencies": {
-    "charactercontroller": "^2.1.0",
+    "charactercontroller": "latest",
     "three": "^0.141.0"
   },
   "devDependencies": {
