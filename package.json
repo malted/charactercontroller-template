@@ -1,6 +1,6 @@
 {
   "name": "charactercontroller-template",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A template to demonstrate useage of the charactercontroller package",
   "scripts": {
     "start": "parcel index.html",
